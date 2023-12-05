@@ -1,0 +1,46 @@
+.pie-chart-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  top: 10px;
+}
+
+.pie-chart {
+  width: 450px;
+  height: 450px;
+  margin: 20px 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  background: linear-gradient(to right,  #003366, #585151);
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+h2 {
+  color: #fff;
+  margin-top: 15px;
+}
+
+
+.pie-chart:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+  .pie-chart-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pie-chart {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 20px 0;
+  }
+}

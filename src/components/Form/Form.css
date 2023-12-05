@@ -1,0 +1,182 @@
+body {
+  background-color: #0d0d0e;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #0d0d0e;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  max-width: 600px;
+  border: 3px solid  #003366;
+  padding: 10px 20px;
+  background: linear-gradient(to right,  #003366, #585151);
+  border-radius: 8px;
+  margin-bottom: 40px;
+  margin-top: 75px;
+  overflow: hidden;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.brand-model-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brand-group,
+.model-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #0d0d0e;
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  border-radius: 40px;
+  color: #0d0d0e;
+}
+
+/* Specific styles for input */
+input {
+  width: auto;
+  border: 1px solid #d8d8c0;
+}
+
+/* Specific styles for select */
+select {
+  width: 100%;
+  border: 1px solid #d8d8c0;
+  border-radius: 40px;
+  max-height: 150px; 
+  overflow-y: auto; 
+}
+
+/* Specific styles for textarea */
+textarea {
+  width: 100%;
+  border: 1px solid #d8d8c0;
+  resize: vertical;
+  border-radius: 40px;
+}
+
+div.form-group > div {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+span {
+  margin-left: 5px;
+}
+
+button {
+  background-color: #9eabb4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(97, 97, 99, 0.1);
+}
+
+button:hover {
+  background-color: #7c7c57;
+}
+
+/* Optional: Style for radio and checkbox inputs */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Optional: Add some spacing for radio and checkbox spans */
+input[type="radio"] + span,
+input[type="checkbox"] + span {
+  margin-left: 5px;
+}
+
+/* Optional: Add a border and padding to the textarea */
+textarea {
+  border: 1px solid #373789; /* Border color */
+  padding: 8px;
+  box-shadow: 0 0 10px #373789; 
+  border-radius: 70px; 
+}
+
+/* Optional: Style for select dropdown */
+select {
+  border: 1px solid #373789; 
+  padding: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #373789; 
+  border-radius: 70px; /* Rounded corners for a cleaner look */
+}
+
+/* DayPicker styles */
+.DayPicker {
+  font-size: 5px !important;
+}
+
+.DayPicker-Month {
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+.DayPicker-Day {
+  width: 30px !important; 
+  height: 30px !important; 
+}
+
+.DayPicker-Day--selected {
+  background-color: #45a049 !important; 
+  color: white !important; 
+}
+
+.DayPicker-Day--today {
+  font-weight: normal;
+}
+
+.DayPicker-Weekday {
+  color: #373789;
+}
+
+.DayPicker-NavButton {
+  color: #fff;
+}
+
+.DayPicker-NavButton--prev,
+.DayPicker-NavButton--next {
+  font-size: 1.5em;
+}
+
+.DayPicker-Caption {
+  color: #373789;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Add a new style for the date inside the calendar */
+.DayPicker-Day span {
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 80%; 
+  }
+}

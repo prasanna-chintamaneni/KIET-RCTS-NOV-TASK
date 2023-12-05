@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Bardley", sans-serif;
+  }
+  
+  /* Define color variables */
+  :root {
+	--mainColor: #003366;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+  }
+  
+  /* Header styles */
+  header {
+	display: flex;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+  }
+  
+  header h3 {
+	margin: 0;
+	margin-left: 100px;
+  }
+  
+  header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+  }
+  
+  /* Navigation styles */
+  nav {
+	display: flex;
+  }
+  
+  nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+  }
+  
+  nav a:hover {
+	color: var(--secondaryColor);
+  }
+  
+  nav .nav-close-btn {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+  }
+  
+  /* Search bar styles */
+.search-bar {
+	display: flex;
+	align-items: center;
+  }
+  
+  .search-input {
+	padding: 8px;
+	border: #003366;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: #fff;
+	color: #333;
+	margin-right: 10px;
+  }
+  
+  .search-button {
+	padding: 8px 16px;
+	background-color: #373789;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 1440px) {
+	.search-bar {
+	  margin-left: 10px; 
+	}
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 1024px) {
+	header .nav-btn {
+	  visibility: visible;
+	  opacity: 1;
+	}
+  
+	header nav {
+	  position: fixed;
+	  top: -100vh;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  gap: 1.5rem;
+	  background-color: var(--mainColor);
+	  transition: 1s;
+	}
+  
+	header .responsive_nav {
+	  transform: translateY(100vh);
+	}
+  
+	nav .nav-close-btn {
+	  position: absolute;
+	  top: 2rem;
+	  right: 2rem;
+	}
+  
+	nav a {
+	  font-size: 1.5rem;
+	}
+  }
+  
+  @media only screen and (max-width: 1024px) {
+	header {
+	  padding: 1rem;
+	}
+  
+	.search-bar {
+	  margin-left: 0;
+	}
+  
+	.responsive_nav {
+	  transform: translateY(0);
+	}
+  
+	nav {
+	  top: 0;
+	}
+  
+	nav a {
+	  font-size: 1.2rem;
+	}
+  }
+  
